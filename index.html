@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron" id="picture">
             <h1 class="text-center">Train Time!</h1>
             <h3 class="text-center">Here is the train schedule. Add your train!</h3>
             <hr class="my-4">
@@ -25,7 +25,7 @@
             <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-header">Current Train Schedule</div>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" id="train-table">
                         <thead>
                             <tr>
                                 <th scope="col">Train Name</th>
@@ -35,19 +35,27 @@
                                 <th scope="col">Minutes Away</th>
                             </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>text</td>
+            <td> Little Engine That Could</td>
+            <td>Child Town</td>
+            <td>60</td>
+            <td>12:00 PM</td>
+            <td>20</td>
+            
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>text</td>
+            <td>Polar Express</td>
+            <td>North Pole</td>
+            <td>120</td>
+            <td>12:40 PM</td>
+            <td>60</td>
         </tr>
+        <tr>
+                <td>Hogwarts Express</td>
+                <td>London</td>
+                <td>240</td>
+                <td> 14:00 PM</td>
+                <td>140</td>
+            </tr>
         </tbody>
         </table>
     </div>
@@ -71,7 +79,7 @@
         </div>
         <div class="form-group">
             <label for="First-Train-Time-input">First Train Time (HH:mm-military time)</label>
-            <input class="form-control" id="first-time" type="text">
+            <input class="form-control" id="first-time-input" type="text">
         </div>
         <div class="form-group">
             <label for="Frequency-input">Frequency (min)</label>
@@ -98,6 +106,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="assets/app.js"></script>
 </body>
 
