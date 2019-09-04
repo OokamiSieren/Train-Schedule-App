@@ -10,6 +10,7 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 // create button for new trains
+
 // store input to database
 // dynamically create table rows for user input
 // display user input to html from database
@@ -85,6 +86,8 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log(tRemainder);
 
     // minutes away
+
+    
     var tMinutes = frequency - tRemainder;
     console.log("MINUTES AWAY: " + tMinutes);
 
