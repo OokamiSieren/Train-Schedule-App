@@ -5,6 +5,5 @@ https://ookamisieren.github.io/Train-Schedule-App/
 ![](./assets/images/train.PNG)
 <br>
 <br>
-&nbsp
 
 Technologies Used: Html,CSS,Firebase, Moment JS
